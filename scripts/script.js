@@ -32,3 +32,12 @@ burgerMenuWrapper.addEventListener('click', function () {
 // modal.addEventListener('click', function () {
 //     modal.style.display = 'none';
 // })
+
+let navLink = document.querySelectorAll('.nav-link');
+
+for (let i = 0; i <= 7; i++) {
+    navLink[i].addEventListener('click', function () {
+        burgerMenuWrapper.style.background = 'none';
+        navbar.style.visibility = 'hidden';
+    })
+}
